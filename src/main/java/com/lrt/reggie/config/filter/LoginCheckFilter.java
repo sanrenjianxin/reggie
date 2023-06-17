@@ -1,6 +1,7 @@
 package com.lrt.reggie.config.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.lrt.reggie.common.BaseContext;
 import com.lrt.reggie.common.R;
 import org.springframework.util.AntPathMatcher;
 
@@ -35,6 +36,10 @@ public class LoginCheckFilter implements Filter {
         }
         // 判断登录状态，如果已经登录，则直接放行
         if (request.getSession().getAttribute("employee") != null) {
+
+            Long empId = (Long) request.getSession().getAttribute("employee");
+            BaseContext.setCurrentId(empId);
+
             filterChain.doFilter(request, response);
             return;
         }
