@@ -20,4 +20,4 @@ mybatis-plus:
       id-type: ASSIGN_ID
 file:
   upload:
-    path: D:/reggie/reggie_take_out/file
+    path: D:/reggie/reggie_take_out/file/

@@ -4,36 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1629db0-0f7d-4dc3-828e-f373f18d2e7e" name="Changes" comment="reggie外卖">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/common/BaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/common/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/common/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/Setmeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/mapper/DishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/mapper/SetmealMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/DishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/SetmealService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/views/Rate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/views/Rate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/views/Upload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../OA项目/OA/SYOA/frontend/src/views/Upload.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e1629db0-0f7d-4dc3-828e-f373f18d2e7e" name="Changes" comment="文件处理">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/DishFlavor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/config/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/config/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/ReggieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrt/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -86,7 +69,12 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "31ee954601a2ac7573b0782bc2eec0b0"
+    "spring.configuration.checksum": "f082f8212b7611de48868575ac4f59f5"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,8 +82,9 @@
       <recent name="D:\reggie\reggie_take_out\src\main\java\com\lrt\reggie\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\reggie\reggie_take_out\src\main\resources\backend\page\demo" />
+      <recent name="D:\reggie\reggie_take_out\src\main\java\com\lrt\reggie\dto" />
       <recent name="D:\reggie\reggie_take_out\src\main\java\com\lrt\reggie\entity" />
+      <recent name="D:\reggie\reggie_take_out\src\main\resources\backend\page\demo" />
       <recent name="D:\reggie\reggie_take_out\src\main\java\com\lrt\reggie\common" />
       <recent name="D:\reggie\reggie_take_out\src\main\resources" />
     </key>
@@ -146,7 +135,8 @@
       <workItem from="1686620305880" duration="353000" />
       <workItem from="1686979588130" duration="6166000" />
       <workItem from="1687010305100" duration="5016000" />
-      <workItem from="1687015587723" duration="2087000" />
+      <workItem from="1687015587723" duration="2923000" />
+      <workItem from="1687153080913" duration="16234000" />
     </task>
     <task id="LOCAL-00001" summary="reggie外卖">
       <created>1686979834328</created>
@@ -155,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686979834328</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="文件处理">
+      <created>1687017844735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687017844735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +163,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -174,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reggie外卖" />
-    <option name="LAST_COMMIT_MESSAGE" value="reggie外卖" />
+    <MESSAGE value="文件处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件处理" />
   </component>
 </project>

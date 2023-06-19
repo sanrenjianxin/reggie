@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/category")
 @Controller
@@ -53,12 +55,29 @@ public class CategoryController {
         return R.success("分类信息删除成功");
     }
 
+    /**
+     * 修改分类信息
+     * @param category
+     * @return
+     */
     @PutMapping
     public R<String> update(@RequestBody Category category) {
         log.info("修改分类信息：{}", category);
-
         categoryService.updateById(category);
         return R.success("修改分类信息成功");
+    }
+
+    /**
+     * 根据条件查询分类数据
+     * @param category
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Category>> list(Category category) {
+        LambdaQueryWrapper<Category> categoryLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        categoryLambdaQueryWrapper.eq(category.getType() != null,Category::getType, category.getType());
+        categoryLambdaQueryWrapper.orderByAsc(Category::getSort).orderByDesc(Category::getUpdateTime);
+        return R.success(categoryService.list(categoryLambdaQueryWrapper));
     }
 
 }
