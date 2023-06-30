@@ -11,4 +11,5 @@ public interface DishService extends IService<Dish> {
 
     public DishDto getByIdWithFlavor(Long id);
 
+    void updateWithFlavor(DishDto dishDto);
 }
